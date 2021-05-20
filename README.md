@@ -1,4 +1,4 @@
-# myApp
+# simpleApp
 
 This application was generated using JHipster 7.0.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.0.1](https://www.jhipster.tech/documentation-archive/v7.0.1).
 
@@ -95,7 +95,7 @@ update src/main/webapp/app/app.module.ts
 
 ### Packaging as jar
 
-To build the final jar and optimize the myApp application for production, run:
+To build the final jar and optimize the simpleApp application for production, run:
 
 ```
 ./mvnw -Pprod clean verify
