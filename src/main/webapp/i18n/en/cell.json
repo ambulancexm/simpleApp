@@ -1,0 +1,25 @@
+{
+  "simpleAppSpringApp": {
+    "cell": {
+      "home": {
+        "title": "Cells",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cell",
+        "createOrEditLabel": "Create or edit a Cell",
+        "notFound": "No Cells found"
+      },
+      "created": "A new Cell is created with identifier {{ param }}",
+      "updated": "A Cell is updated with identifier {{ param }}",
+      "deleted": "A Cell is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Cell {{ id }}?"
+      },
+      "detail": {
+        "title": "Cell"
+      },
+      "id": "Id",
+      "name": "Name",
+      "age": "Age"
+    }
+  }
+}
