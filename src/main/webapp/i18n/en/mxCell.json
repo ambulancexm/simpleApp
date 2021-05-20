@@ -1,0 +1,30 @@
+{
+  "myApp": {
+    "mxCell": {
+      "home": {
+        "title": "Mx Cells",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Mx Cell",
+        "createOrEditLabel": "Create or edit a Mx Cell",
+        "notFound": "No Mx Cells found"
+      },
+      "created": "A new Mx Cell is created with identifier {{ param }}",
+      "updated": "A Mx Cell is updated with identifier {{ param }}",
+      "deleted": "A Mx Cell is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mx Cell {{ id }}?"
+      },
+      "detail": {
+        "title": "Mx Cell"
+      },
+      "id": "Id",
+      "lg": "Lg",
+      "style": "Style",
+      "task": "Task",
+      "event": "Event",
+      "gateway": "Gateway",
+      "message": "Message",
+      "process": "Process"
+    }
+  }
+}

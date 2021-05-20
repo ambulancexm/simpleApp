@@ -1,0 +1,80 @@
+<div>
+  <h2 id="page-heading" data-cy="MxCellHeading">
+    <span jhiTranslate="myApp.mxCell.home.title">Mx Cells</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info mr-2" (click)="loadAll()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="myApp.mxCell.home.refreshListLabel">Refresh List</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-mx-cell"
+        [routerLink]="['/mx-cell/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="myApp.mxCell.home.createLabel"> Create a new Mx Cell </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="mxCells?.length === 0">
+    <span jhiTranslate="myApp.mxCell.home.notFound">No mxCells found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="mxCells && mxCells.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr>
+          <th scope="col"><span jhiTranslate="myApp.mxCell.id">Id</span></th>
+          <th scope="col"><span jhiTranslate="myApp.mxCell.lg">Lg</span></th>
+          <th scope="col"><span jhiTranslate="myApp.mxCell.style">Style</span></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let mxCell of mxCells; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/mx-cell', mxCell.id, 'view']">{{ mxCell.id }}</a>
+          </td>
+          <td>{{ mxCell.lg }}</td>
+          <td>{{ mxCell.style }}</td>
+          <td class="text-right">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/mx-cell', mxCell.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/mx-cell', mxCell.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(mxCell)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
