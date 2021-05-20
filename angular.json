@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "simple-app": {
+    "simple-app-spring": {
       "root": "",
       "sourceRoot": "src/main/webapp",
       "projectType": "application",
@@ -66,12 +66,12 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "simple-app:build",
+            "browserTarget": "simple-app-spring:build",
             "proxyConfig": "./webpack/proxy.conf.js"
           },
           "configurations": {
             "production": {
-              "browserTarget": "simple-app:build:production"
+              "browserTarget": "simple-app-spring:build:production"
             }
           }
         },
@@ -93,7 +93,7 @@
       "prefix": "jhi"
     }
   },
-  "defaultProject": "simple-app",
+  "defaultProject": "simple-app-spring",
   "cli": {
     "packageManager": "npm"
   }

@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="cell">
+      <h2 data-cy="cellDetailsHeading"><span jhiTranslate="simpleAppSpringApp.cell.detail.title">Cell</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="simpleAppSpringApp.cell.id">Id</span></dt>
+        <dd>
+          <span>{{ cell.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="simpleAppSpringApp.cell.name">Name</span></dt>
+        <dd>
+          <span>{{ cell.name }}</span>
+        </dd>
+        <dt><span jhiTranslate="simpleAppSpringApp.cell.age">Age</span></dt>
+        <dd>
+          <span>{{ cell.age }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/cell', cell.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

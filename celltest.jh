@@ -1,0 +1,23 @@
+
+application {
+  config {
+    baseName simpleAppSpring,
+    applicationType monolith,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework angular
+  }
+  entities *
+}
+
+entity Cell {
+	id Long,
+    name String,
+    age Integer,
+}
+
+
+
+
+    
