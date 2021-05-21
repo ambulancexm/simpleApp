@@ -1,0 +1,27 @@
+{
+  "name": "Task",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "mxCell",
+      "otherEntityRelationshipName": "task",
+      "relationshipName": "mxCell"
+    }
+  ],
+  "entityTableName": "task",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["myApp"],
+  "changelogDate": "20210521071555"
+}

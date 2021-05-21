@@ -1,8 +1,8 @@
 {
-  "name": "simple-app-spring",
+  "name": "my-app",
   "version": "0.0.1-SNAPSHOT",
   "private": true,
-  "description": "Description for simpleAppSpring",
+  "description": "Description for myApp",
   "license": "UNLICENSED",
   "scripts": {
     "prettier:check": "prettier --check \"{,src/**/,webpack/}*.{md,json,yml,html,js,ts,tsx,css,scss,java}\"",

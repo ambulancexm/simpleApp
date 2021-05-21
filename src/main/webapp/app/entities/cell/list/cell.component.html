@@ -1,11 +1,11 @@
 <div>
   <h2 id="page-heading" data-cy="CellHeading">
-    <span jhiTranslate="simpleAppSpringApp.cell.home.title">Cells</span>
+    <span jhiTranslate="myApp.cell.home.title">Cells</span>
 
     <div class="d-flex justify-content-end">
       <button class="btn btn-info mr-2" (click)="loadAll()" [disabled]="isLoading">
         <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
-        <span jhiTranslate="simpleAppSpringApp.cell.home.refreshListLabel">Refresh List</span>
+        <span jhiTranslate="myApp.cell.home.refreshListLabel">Refresh List</span>
       </button>
 
       <button
@@ -15,7 +15,7 @@
         [routerLink]="['/cell/new']"
       >
         <fa-icon icon="plus"></fa-icon>
-        <span jhiTranslate="simpleAppSpringApp.cell.home.createLabel"> Create a new Cell </span>
+        <span jhiTranslate="myApp.cell.home.createLabel"> Create a new Cell </span>
       </button>
     </div>
   </h2>
@@ -25,16 +25,16 @@
   <jhi-alert></jhi-alert>
 
   <div class="alert alert-warning" id="no-result" *ngIf="cells?.length === 0">
-    <span jhiTranslate="simpleAppSpringApp.cell.home.notFound">No cells found</span>
+    <span jhiTranslate="myApp.cell.home.notFound">No cells found</span>
   </div>
 
   <div class="table-responsive" id="entities" *ngIf="cells && cells.length > 0">
     <table class="table table-striped" aria-describedby="page-heading">
       <thead>
         <tr>
-          <th scope="col"><span jhiTranslate="simpleAppSpringApp.cell.id">Id</span></th>
-          <th scope="col"><span jhiTranslate="simpleAppSpringApp.cell.name">Name</span></th>
-          <th scope="col"><span jhiTranslate="simpleAppSpringApp.cell.age">Age</span></th>
+          <th scope="col"><span jhiTranslate="myApp.cell.id">Id</span></th>
+          <th scope="col"><span jhiTranslate="myApp.cell.name">Name</span></th>
+          <th scope="col"><span jhiTranslate="myApp.cell.age">Age</span></th>
           <th scope="col"></th>
         </tr>
       </thead>

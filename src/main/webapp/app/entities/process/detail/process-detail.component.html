@@ -1,0 +1,34 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="process">
+      <h2 data-cy="processDetailsHeading"><span jhiTranslate="myApp.process.detail.title">Process</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="myApp.process.id">Id</span></dt>
+        <dd>
+          <span>{{ process.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="myApp.process.mxCell">Mx Cell</span></dt>
+        <dd>
+          <div *ngIf="process.mxCell">
+            <a [routerLink]="['/mx-cell', process.mxCell?.id, 'view']">{{ process.mxCell?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/process', process.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

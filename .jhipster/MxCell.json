@@ -1,0 +1,59 @@
+{
+  "name": "MxCell",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "lg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "style",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "task",
+      "otherEntityRelationshipName": "mxCell",
+      "relationshipName": "task"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "event",
+      "otherEntityRelationshipName": "mxCell",
+      "relationshipName": "event"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "gateway",
+      "otherEntityRelationshipName": "mxCell",
+      "relationshipName": "gateway"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "message",
+      "otherEntityRelationshipName": "mxCell",
+      "relationshipName": "message"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "process",
+      "otherEntityRelationshipName": "mxCell",
+      "relationshipName": "process"
+    }
+  ],
+  "entityTableName": "mx_cell",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["myApp"],
+  "changelogDate": "20210521071554"
+}

@@ -49,6 +49,17 @@ public class CacheConfiguration {
             createCache(cm, com.myapp.domain.Authority.class.getName());
             createCache(cm, com.myapp.domain.User.class.getName() + ".authorities");
             createCache(cm, com.myapp.domain.Cell.class.getName());
+            createCache(cm, com.myapp.domain.MxCell.class.getName());
+            createCache(cm, com.myapp.domain.MxCell.class.getName() + ".tasks");
+            createCache(cm, com.myapp.domain.MxCell.class.getName() + ".events");
+            createCache(cm, com.myapp.domain.MxCell.class.getName() + ".gateways");
+            createCache(cm, com.myapp.domain.MxCell.class.getName() + ".messages");
+            createCache(cm, com.myapp.domain.MxCell.class.getName() + ".processes");
+            createCache(cm, com.myapp.domain.Task.class.getName());
+            createCache(cm, com.myapp.domain.Event.class.getName());
+            createCache(cm, com.myapp.domain.Gateway.class.getName());
+            createCache(cm, com.myapp.domain.Message.class.getName());
+            createCache(cm, com.myapp.domain.Process.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

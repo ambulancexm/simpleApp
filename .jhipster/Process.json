@@ -1,0 +1,27 @@
+{
+  "name": "Process",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "mxCell",
+      "otherEntityRelationshipName": "process",
+      "relationshipName": "mxCell"
+    }
+  ],
+  "entityTableName": "process",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["myApp"],
+  "changelogDate": "20210521071559"
+}

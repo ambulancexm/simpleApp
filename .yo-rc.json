@@ -2,7 +2,7 @@
   "generator-jhipster": {
     "applicationType": "monolith",
     "gitCompany": "",
-    "baseName": "simpleAppSpring",
+    "baseName": "myApp",
     "packageName": "com.myapp",
     "packageFolder": "com/myapp",
     "serverPort": "8080",
@@ -43,8 +43,8 @@
     "clientTheme": "none",
     "clientThemeVariant": "",
     "reactive": false,
-    "entities": ["Cell"],
-    "lastLiquibaseTimestamp": 1621498781000
+    "entities": ["Cell", "MxCell", "Task", "Event", "Gateway", "Message", "Process"],
+    "lastLiquibaseTimestamp": 1621581359000
   },
   "git-provider": "GitHub",
   "git-company": "ambulancexm",
