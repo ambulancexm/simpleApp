@@ -1,6 +1,6 @@
 package com.myapp;
 
-import com.myapp.SimpleAppSpringApp;
+import com.myapp.MyCellEntityApp;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -12,6 +12,6 @@ import org.springframework.boot.test.context.SpringBootTest;
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@SpringBootTest(classes = SimpleAppSpringApp.class)
+@SpringBootTest(classes = MyCellEntityApp.class)
 public @interface IntegrationTest {
 }

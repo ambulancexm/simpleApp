@@ -3,7 +3,7 @@ package com.myapp.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * Properties specific to Simple App Spring.
+ * Properties specific to My Cell Entity.
  * <p>
  * Properties are configured in the {@code application.yml} file.
  * See {@link tech.jhipster.config.JHipsterProperties} for a good example.
