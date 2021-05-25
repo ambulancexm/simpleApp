@@ -1,0 +1,44 @@
+{
+  "name": "MxCell",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "lg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "style",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "value",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "source",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "target",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "mx_cell",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["myCellEntity"],
+  "changelogDate": "20210525120516"
+}

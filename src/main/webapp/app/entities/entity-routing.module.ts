@@ -6,8 +6,13 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       {
         path: 'cell',
-        data: { pageTitle: 'simpleAppSpringApp.cell.home.title' },
+        data: { pageTitle: 'myCellEntityApp.cell.home.title' },
         loadChildren: () => import('./cell/cell.module').then(m => m.CellModule),
+      },
+      {
+        path: 'mx-cell',
+        data: { pageTitle: 'myCellEntityApp.mxCell.home.title' },
+        loadChildren: () => import('./mx-cell/mx-cell.module').then(m => m.MxCellModule),
       },
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ]),
