@@ -1,0 +1,30 @@
+
+application {
+  config {
+    baseName myCellEntity,
+    applicationType monolith,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework angular
+  }
+  entities *
+}
+
+entity MxCell {
+	id Long,
+    lg String,	
+	style String,
+	value String,
+	parent String,
+	source String,
+	target String,
+    
+}
+
+paginate MxCell with pagination
+
+service MxCell with serviceClass
+dto MxCell with Mapstruct
+
+    
