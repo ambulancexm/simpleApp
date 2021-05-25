@@ -21,7 +21,7 @@ module.exports = (config, options, targetOptions) => {
       }),
       new FriendlyErrorsWebpackPlugin(),
       new WebpackNotifierPlugin({
-        title: 'Simple App Spring',
+        title: 'My Cell Entity',
         contentImage: path.join(__dirname, 'logo-jhipster.png'),
       })
     );

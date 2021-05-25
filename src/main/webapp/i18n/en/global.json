@@ -1,6 +1,6 @@
 {
   "global": {
-    "title": "SimpleAppSpring",
+    "title": "MyCellEntity",
     "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
     "menu": {
       "home": "Home",
@@ -8,6 +8,7 @@
       "entities": {
         "main": "Entities",
         "cell": "Cell",
+        "mxCell": "Mx Cell",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

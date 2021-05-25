@@ -2,9 +2,9 @@
   "generator-jhipster": {
     "applicationType": "monolith",
     "gitCompany": "",
-    "baseName": "simpleAppSpring",
-    "packageName": "com.myapp",
-    "packageFolder": "com/myapp",
+    "baseName": "myCellEntity",
+    "packageName": "com.cell.entity",
+    "packageFolder": "com/cell/entity",
     "serverPort": "8080",
     "serviceDiscoveryType": false,
     "authenticationType": "jwt",
@@ -43,8 +43,8 @@
     "clientTheme": "none",
     "clientThemeVariant": "",
     "reactive": false,
-    "entities": ["Cell"],
-    "lastLiquibaseTimestamp": 1621498781000
+    "entities": ["Cell", "MxCell"],
+    "lastLiquibaseTimestamp": 1621944316000
   },
   "git-provider": "GitHub",
   "git-company": "ambulancexm",
